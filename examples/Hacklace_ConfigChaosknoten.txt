@@ -1,0 +1,4 @@
+HL										\# initialization sequence
+\00 64 01\  \1F 12 1E 21 21 21 33 2D 3F 2D 2D 1E 0C 0C 8C 54 FC 3C 48 80\  \00\ \# Chaosknoten
+\FF\
+
