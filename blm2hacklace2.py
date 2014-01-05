@@ -28,7 +28,7 @@ class CLIError(Exception):
         return self.msg
 
 def blm2hacklace2(filepath, verbose = False):
-    print 'blm2hacklace2 converts ' + filepath
+    if verbose: print 'blm2hacklace2 converts ' + filepath
     f = open(filepath,'r')
     # check file format and get width and height
     l = f.readline()
