@@ -2,10 +2,16 @@ blm2hacklace2
 =============
 **blm (BlinkenLight Movie) file to Hacklace2 hex string converter**
 
+Create animations/graphics for your Hacklace2 with Blinkenarea's Blimp editor as BLM (BlinkenLight Movie) files and use then this Python script to obtain the Hacklace2 hex strings for the Hacklace2 config file. 
+
+* Blinkenarea Blimp: http://wiki.blinkenarea.org/index.php/Blimp
+
 Example
 -------
     blm2hacklace2.py ./examples/chaosknoten18x8.blm
     1F 12 1E 21 21 21 33 2D 3F 2D 2D 1E 0C 0C 8C 54 FC 3C 48 80
+
+The directory ./examples contains the Chaosknoten as BLM file and the corresponding Hacklace2 config file. 
 
 Usage
 -----
