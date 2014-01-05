@@ -28,8 +28,11 @@ class CLIError(Exception):
         return self.msg
 
 def blm2hacklace2(filepath, verbose = False):
-    print 'blm2hacklace2 converts ' + filepath
+
+    if verbose: print 'blm2hacklace2 converts ' + filepath
+    
     f = open(filepath,'r')
+    
     # check file format and get width and height
     l = f.readline()
     if not l.lower().startswith("# blinkenlights movie"):
@@ -39,14 +42,12 @@ def blm2hacklace2(filepath, verbose = False):
         raise Exception("Wrong BLM file format for file %s" % filepath)
     width = int(r[0][0])
     height = int(r[0][1])
-
     if height!=8:
         raise Exception("Only height of 8 is supported.")
     if width>200:
         raise Exception("Only width up to 200 is supported.")
 
     frameNo = 0
-    
     for l in f:
         if l[0]=='@':
             frameNo += 1
